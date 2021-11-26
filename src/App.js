@@ -86,7 +86,7 @@ class App extends Component {
 
     this.setState({imageUrl: this.state.input})
 
-    fetch('https://hidden-ocean-91881.herokuapp.com/imageurl', {
+    fetch('https://secret-plains-24997.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type' : 'application/json'},
       body: JSON.stringify({
@@ -97,7 +97,7 @@ class App extends Component {
     .then(response => {
       if(response){
         console.log("this.state.user.id") ;
-        fetch('https://hidden-ocean-91881.herokuapp.com/image', {
+        fetch('https://secret-plains-24997.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type' : 'application/json'},
           body: JSON.stringify({
